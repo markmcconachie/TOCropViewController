@@ -61,10 +61,7 @@
     
     _doneTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     _doneTextButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [_doneTextButton setTitle:NSLocalizedStringFromTableInBundle(@"Done",
-                                                                 @"TOCropViewControllerLocalizable",
-                                                                 [NSBundle bundleForClass:[self class]],
-                                                                 nil)
+    [_doneTextButton setTitle:NSLocalizedString(@"Done", @"TOCropViewControllerLocalizable")
                      forState:UIControlStateNormal];
     [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f] forState:UIControlStateNormal];
     [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
@@ -79,10 +76,8 @@
     
     _cancelTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     _cancelTextButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-    [_cancelTextButton setTitle:NSLocalizedStringFromTableInBundle(@"Cancel",
-                                                                   @"TOCropViewControllerLocalizable",
-                                                                   [NSBundle bundleForClass:[self class]],
-                                                                   nil)
+    [_cancelTextButton setTitle:NSLocalizedString(@"Cancel", @"TOCropViewControllerLocalizable")
+     
                        forState:UIControlStateNormal];
     [_cancelTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
