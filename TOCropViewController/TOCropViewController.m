@@ -265,16 +265,10 @@ typedef NS_ENUM(NSInteger, TOCropViewControllerAspectRatio) {
     BOOL verticalCropBox = self.cropView.cropBoxAspectRatioIsPortrait;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self
-                                                    cancelButtonTitle:NSLocalizedString("Cancel", "")
+                                                    cancelButtonTitle:NSLocalizedString(@"Cancel", "")
                                                destructiveButtonTitle:nil
-                                                    otherButtonTitles:NSLocalizedStringFromTableInBundle(@"Original",
-                                                                                                          @"TOCropViewControllerLocalizable",
-                                                                                                          [NSBundle bundleForClass:[self class]],
-                                                                                                          nil),
-                                                                      NSLocalizedStringFromTableInBundle(@"Square",
-                                                                                                         @"TOCropViewControllerLocalizable",
-                                                                                                         [NSBundle bundleForClass:[self class]],
-                                                                                                         nil),
+                                                    otherButtonTitles:NSLocalizedString(@"Original", ""),
+                                                                      NSLocalizedString(@"Square", ""),
                                                                       verticalCropBox ? @"2:3" : @"3:2",
                                                                       verticalCropBox ? @"3:5" : @"5:3",
                                                                       verticalCropBox ? @"3:4" : @"4:3",
