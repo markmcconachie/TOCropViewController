@@ -265,10 +265,7 @@ typedef NS_ENUM(NSInteger, TOCropViewControllerAspectRatio) {
     BOOL verticalCropBox = self.cropView.cropBoxAspectRatioIsPortrait;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self
-                                                    cancelButtonTitle:NSLocalizedStringFromTableInBundle(@"Cancel",
-                                                                                                         @"TOCropViewControllerLocalizable",
-                                                                                                         [NSBundle bundleForClass:[self class]],
-                                                                                                         nil)
+                                                    cancelButtonTitle:NSLocalizedString("Cancel", "")
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:NSLocalizedStringFromTableInBundle(@"Original",
                                                                                                           @"TOCropViewControllerLocalizable",
